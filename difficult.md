@@ -53,7 +53,7 @@ In a M X N grid, find the greatest product of four adjacent numbers in the same 
 def largest_product_in_series(series):
 ```
 
-# Problem 6-- Reciprocal cycles
+# Problem 6
 A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:
 ```
 1/2 = 0.5
