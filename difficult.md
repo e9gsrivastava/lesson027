@@ -41,19 +41,16 @@ def count_smaller_numbers_to_right(nums):
 
 
 # Problem 3
-You are given the following information, but you may not use any libraries:
-
-1 Jan 1900 was a Monday.
-Thirty days have September, April, June, and November.
-All the rest have thirty-one, saving February alone, which has twenty-eight, rain or shine.
-On leap years, twenty-nine.
-A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
-How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
+Implement a function max_profit(prices) to find the maximum profit from buying and selling a stock given an array of prices.
 
 ```
-def counting_sundays():
+def max_profit(prices):
 ```
 
+For example:
+```
+max_profit([7,1,5,3,6,4]) should return 5.
+```
 
 # Problem 4
 
@@ -63,34 +60,26 @@ The N-Queens puzzle is the problem of placing N chess queens on an N×N chessboa
 def n_queens(n):
 ```
 # Problem 5
-
-In a M X N grid, find the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally). Write a function largest_product_in_series(series).
-
+Implement a function is_palindrome(s) that checks whether a string is a palindrome, considering only alphanumeric characters and ignoring cases.
 ```
-def largest_product_in_series(series):
+def is_palindrome(s):
 ```
-
-# Problem 6
-A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:
+For example:
 ```
-1/2 = 0.5
-1/3 = 0.(3)
-1/4 = 0.25
-1/5 = 0.2
-1/6 = 0.1(6)
-1/7 = 0.(142857)
-1/8 = 0.125
-1/9 = 0.(1)
-1/10 = 0.1
+is_palindrome("A man, a plan, a canal: Panama") should return True
 ```
-Where 0.1(6) means 0.166666..., and has a 1-digit recurring cycle. It can be seen that 1/7 has a 6-digit recurring cycle.
-
-Write a function reciprocal_cycle_length(d) that returns the length of the recurring cycle in the decimal fraction 1/d for a given denominator d.
+# Problem 6-- Reciprocal cycles
+You have N number of people and C number of chocolates. You need to distribute the chocolates among the people in such a way that each person at position P gets the maximum number of chocolates. However, no one should receive double or more chocolates than the persons on their left or right.
+```
+def distribute_chocolates(N, C, P):
+```
+For example:
 
 ```
-def reciprocal_cycle_length(d):
+distribute_chocolates(5, 15, 2) should return 5.
 ```
-For example, reciprocal_cycle_length(7) should return 6 as the recurring cycle in the decimal fraction 1/7 is 6 digits long.
+In this example, there are 5 people, 15 chocolates, and the person at position 2 should receive the maximum number of chocolates. The distribution should follow the given constraints.
+
 
 # Problem 7 
 Write a Python function, number_to_words(n), that converts a given integer n (where 0 <= n <= 9999) into words. The function should return the English words representing the given number.
