@@ -1,10 +1,10 @@
 # Problem 1
 
-Write a function `generate_random_age()` that generates a random age between 18 and 65.
+Write a function to sort a list of numbers without using sort method
 
 ```
 import random
-def generate_random_age():
+def sort(my_list):
 ```
 # Problem 2
 Create a function `generate_random_name()` that generates a random name.
@@ -15,14 +15,20 @@ def generate_random_name():
 ```
 
 # Problem 3
-Combine the previous functions to create a function `generate_random_person()` that generates a random person with age, first name, and last name.
-
+Create a Python function validate_email(email) that validates if a given string is a valid email address.
 ```
-def generate_random_person():
+def validate_email(email):
+```
+```
+validate_email("user@example.com")  # True
+validate_email("invalid_email")      # False
+validate_email("another@example")     # False
+validate_email("test.email@domain")   # False
+validate_email("valid.email@domain.com")  # True
 ```
 
 # Problem 4
-Write a Python function that takes two lists, keys_list and values_list, and creates a dictionary from them. Provide an example of how this function can be used, including the input lists and the resulting dictionary.
+Write a Python function that takes two lists, keys_list and values_list, and creates a dictionary from them.
 
 ```
 def lists_to_dict(keys, values):
@@ -52,11 +58,10 @@ def average_column(csv_file, column_name):
 ```
 
 # Problem 8
-Create a function `extract_json_data(json_data, key)` that reads data and return in list form.
+Create a function calculate_factorial(n) that calculates the factorial of a given number using recursion.
 ```
-def extract_json_data(json_data):
+def calculate_factorial(n):
 ```
-
 # Problem 9
 
 Convert a list of dicts to a dict of lists
@@ -69,11 +74,14 @@ output = {"name": ["a", "b"], "age": [21,43]}
 ```
 
 # Problem 10
-Convert a dict of lists to a list of dicts
+Write a Python function capitalize_names(names) that takes a list of names as input and converts the first and last names to have their first letters capitalized.
 
 ```
->>> dict_to_list(data: dict)
-
-data = {"name": ["a", "b"], "age": [21,43]}
-output = [{"name": "a", "age": 21}, {"name": "b", "age": 43}]
+def capitalize_names(names):
+```
+Example:
+```
+names_list = ["john doe", "jane smith", "bob johnson"]
+result = capitalize_names(names_list)
+# Output: ['John Doe', 'Jane Smith', 'Bob Johnson']
 ```
