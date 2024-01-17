@@ -68,7 +68,7 @@ For example:
 ```
 is_palindrome("A man, a plan, a canal: Panama") should return True
 ```
-# Problem 6-- Reciprocal cycles
+# Problem 6
 You have N number of people and C number of chocolates. You need to distribute the chocolates among the people in such a way that each person at position P gets the maximum number of chocolates. However, no one should receive double or more chocolates than the persons on their left or right.
 ```
 def distribute_chocolates(N, C, P):
